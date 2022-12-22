@@ -1,0 +1,48 @@
+Description: fix for mocha 7
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-03-10
+
+--- a/test/index.test.js
++++ b/test/index.test.js
+@@ -1,8 +1,11 @@
+ var merge = require('../index');
++var chai = require('chai');
++
++global.expect = chai.expect;
+ 
+ describe('merge', function() {
+   
+-  describe('an object', function() {
++  it('an object', function() {
+     var a = { foo: 'bar' }
+       , b = { bar: 'baz' };
+     var o = merge(a, b);
+@@ -18,7 +21,7 @@
+     });
+   });
+   
+-  describe('an object with duplicate key', function() {
++  it('an object with duplicate key', function() {
+     var a = { foo: 'bar', qux: 'corge' }
+       , b = { foo: 'baz' };
+     var o = merge(a, b);
+@@ -34,7 +37,7 @@
+     });
+   });
+   
+-  describe('without a source object', function() {
++  it('without a source object', function() {
+     var a = { foo: 'bar' };
+     var o = merge(a);
+     
+--- a/test/module.test.js
++++ b/test/module.test.js
+@@ -1,4 +1,7 @@
+ var merge = require('../index');
++var chai = require('chai');
++
++global.expect = chai.expect;
+ 
+ describe('utils-merge', function() {
+     

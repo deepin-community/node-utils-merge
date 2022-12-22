@@ -1,0 +1,6 @@
+This module is a trivial code snippet used by several modules :
+
+https://www.npmjs.org/browse/depended/utils-merge
+
+justifying its existence as a separate package.
+

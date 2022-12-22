@@ -1,0 +1,23 @@
+node-utils-merge (1.0.1-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Change priority to optional
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * New upstream version 1.0.1
+  * Use pkg-js-tools auto install
+  * Enable upstream test using mocha
+  * Update VCS fields to salsa
+  * Update copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 10 Mar 2020 06:38:42 +0100
+
+node-utils-merge (1.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #744778)
+
+ -- Leo Iannacone <l3on@ubuntu.com>  Wed, 16 Apr 2014 16:14:20 +0200

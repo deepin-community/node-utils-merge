@@ -1,0 +1,25 @@
+Source: node-utils-merge
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Leo Iannacone <l3on@ubuntu.com>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 12)
+ , chai <!nocheck>
+ , mocha <!nocheck>
+ , pkg-js-tools (>= 0.9.20~)
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-utils-merge
+Vcs-Git: https://salsa.debian.org/js-team/node-utils-merge.git
+Homepage: https://github.com/jaredhanson/utils-merge
+Rules-Requires-Root: no
+
+Package: node-utils-merge
+Architecture: all
+Depends: ${misc:Depends}
+ , nodejs
+Description: provides a merge utility function
+ Simple merges the properties from a source object
+ into a destination object.
+ .
+ Node.js is an event-based server-side JavaScript engine.
